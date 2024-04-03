@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.container_propuestas{
+    height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    margin: 15px;
+    transition: 300ms;
+}
+
+.propuesta_1, .propuesta_2, .propuesta_3, .propuesta_4, .propuesta_5, .propuesta_6{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: white;
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_propuesta_1{
+    height: 150px;
+    width: 250px;
+    background-image: url(../image/icono/educacion.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_propuesta_2{
+    height: 150px;
+    width: 250px;
+    background-image: url(../image/icono/policia.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_propuesta_3{
+    height: 150px;
+    width: 200px;
+    background-image: url(../image/icono/infra.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_propuesta_4{
+    height: 150px;
+    width: 200px;
+    background-image: url(../image/icono/deporte.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_propuesta_5{
+    height: 150px;
+    width: 200px;
+    background-image: url(../image/icono/servicios.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_propuesta_6{
+    height: 150px;
+    width: 200px;
+    background-image: url(../image/icono/pesca.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.detalle, .detalle_2, .detalle_3, .detall4, .detalle_5, .detalle_6{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+
+/* hover */
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .imagen_propuesta_1{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/educacion.png);
+}
+
+.card:hover .imagen_propuesta_2{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/policia.png);
+}
+
+.card:hover .imagen_propuesta_3{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/infra.png);
+}
+
+.card:hover .imagen_propuesta_4{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/deporte.png);
+}
+
+.card:hover .imagen_propuesta_5{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/servicios.png);
+}
+
+.card:hover .imagen_propuesta_6{
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(../image/icono/pesca.png);
+}
+
+.card:hover .propuesta_1{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.card:hover .propuesta_2{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.card:hover .propuesta_3{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.card:hover .propuesta_4{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.card:hover .propuesta_5{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.card:hover .propuesta_6{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+/* texto y bottun */
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:xx-large;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    font-size: px;
+}
+
+.btn {
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    background: #ec1c24;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #231f20;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #fff100;
+    text-decoration: none;
+  }
